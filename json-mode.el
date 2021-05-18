@@ -135,9 +135,9 @@ This function calls `json-mode--update-auto-mode' to change the
 ;;;###autoload
 (defun json-mode-kill-path ()
   (interactive)
-    (kill-new (jsons-print-path)))
+  (kill-new (jsons-print-path)))
 
-(define-key json-mode-map (kbd "C-c P") 'json-mode-kill-path)
+(define-key json-mode-map (kbd "C-c C-k") 'json-mode-kill-path)
 
 ;;;###autoload
 (defun json-mode-beautify ()
